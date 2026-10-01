@@ -1,0 +1,65 @@
+# HuRoN-only ViNT-PointGoal fine-tuning.
+# The official ViNT checkpoint still needs a verified PointGoal conversion.
+project_name: rvn_vint_huron_only
+run_name: vint_pg_huron_only_ft5
+log_root: /autodl-fs/data/RVN-Bench-huron-only-runs
+use_wandb: false
+train: true
+
+batch_size: 64
+eval_batch_size: 64
+epochs: 5
+gpu_ids: [0]
+num_workers: 8
+lr: 0.00001
+optimizer: adamw
+clipping: false
+max_norm: 1.0
+scheduler: cosine
+warmup: false
+warmup_epochs: 0
+seed: 0
+
+model_type: vint_pointgoal
+obs_encoder: efficientnet-b0
+obs_encoding_size: 512
+mha_num_attention_heads: 4
+mha_num_attention_layers: 4
+mha_ff_dim_factor: 4
+late_fusion: false
+pg_rcs: true
+pretrained_checkpoint: /autodl-fs/data/RVN-Bench-shared/weights/vint.pth
+
+normalize: true
+context_type: temporal
+context_size: 5
+alpha: 0.5
+distance:
+  min_dist_cat: 0
+  max_dist_cat: 20
+action:
+  min_dist_cat: 0
+  max_dist_cat: 10
+close_far_threshold: 10
+len_traj_pred: 5
+learn_angle: true
+image_size: [96, 96]
+goal_type: image
+
+datasets:
+  huron:
+    data_folder: /root/autodl-tmp/huron_vint_20260904
+    train: /root/autodl-tmp/RVN-Bench-native/models/gnms_levin/train/vint_train/data/data_splits/huron/train
+    test: /root/autodl-tmp/RVN-Bench-native/models/gnms_levin/train/vint_train/data/data_splits/huron/test
+    waypoint_spacing: 1
+    end_slack: 3
+    goals_per_obs: 1
+    negative_mining: true
+    horizontal_flip_prob: 0.5
+
+print_log_freq: 100
+image_log_freq: 0
+num_images_log: 0
+eval_fraction: 0.1
+wandb_log_freq: 100
+eval_freq: 1

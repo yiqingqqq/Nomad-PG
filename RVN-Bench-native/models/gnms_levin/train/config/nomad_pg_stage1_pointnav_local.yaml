@@ -1,0 +1,80 @@
+# Stage 1: preserve the pretrained visual encoder and Transformer while
+# adapting the PointGoal MLP and diffusion action decoder.
+project_name: rvn_nomad_pg_stage1_pointnav_local
+run_name: nomad_pg_stage1_goalmlp_diffusion
+log_root: /home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runs/stage1
+use_wandb: false
+train: true
+
+batch_size: 16
+eval_batch_size: 16
+epochs: 20
+gpu_ids: [0]
+num_workers: 4
+lr: 0.0001
+optimizer: adamw
+clipping: true
+max_norm: 1.0
+scheduler: cosine
+warmup: true
+warmup_epochs: 2
+seed: 270928
+
+model_type: nomad_pointgoal
+vision_encoder: nomad_pointgoal_vint
+encoding_size: 256
+obs_encoder: efficientnet-b0
+attn_unet: false
+cond_predict_scale: false
+mha_num_attention_heads: 4
+mha_num_attention_layers: 4
+mha_ff_dim_factor: 4
+down_dims: [64, 128, 256]
+num_diffusion_iters: 10
+goal_mask_prob: 0.5
+pg_rcs: true
+
+pretrained_checkpoint: /home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/stage1_data/weights/nomad_pg_zero_shot.pth
+train_only_modules: [vision_encoder.goal_encoder, noise_pred_net]
+module_lr_multipliers:
+  noise_pred_net: 0.1
+balanced_dataset_sampling: true
+
+normalize: true
+context_type: temporal
+context_size: 3
+alpha: 0.0001
+distance:
+  min_dist_cat: 0
+  max_dist_cat: 20
+action:
+  min_dist_cat: 3
+  max_dist_cat: 20
+len_traj_pred: 8
+learn_angle: false
+image_size: [96, 96]
+
+datasets:
+  go_stanford:
+    data_folder: /home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/stage1_data/go_stanford
+    train: /home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/stage1_data/go_stanford_splits_seed0/train
+    test: /home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/stage1_data/go_stanford_splits_seed0/val
+    waypoint_spacing: 1
+    end_slack: 0
+    goals_per_obs: 2
+    negative_mining: true
+  huron:
+    data_folder: /home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/stage1_data/huron_vint_20260904
+    train: /home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/stage1_data/huron_splits/train
+    test: /home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/stage1_data/huron_splits/test
+    waypoint_spacing: 1
+    end_slack: 3
+    goals_per_obs: 1
+    negative_mining: true
+
+print_log_freq: 100
+image_log_freq: 0
+num_images_log: 0
+eval_fraction: 0.1
+wandb_log_freq: 100
+eval_freq: 1

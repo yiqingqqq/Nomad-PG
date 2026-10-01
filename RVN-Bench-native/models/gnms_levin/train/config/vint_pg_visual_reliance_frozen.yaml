@@ -1,0 +1,88 @@
+# Stage 2: reduce the PointGoal shortcut while keeping the ViNT visual backbone fixed.
+project_name: rvn_vint_pg_visual_reliance
+run_name: vint_pg_visual_reliance_frozen
+log_root: /root/autodl-tmp/RVN-Bench-gostanford-huron-runs
+use_wandb: false
+train: true
+
+batch_size: 128
+eval_batch_size: 128
+epochs: 10
+gpu_ids: [0]
+num_workers: 8
+lr: 0.0001
+optimizer: adamw
+clipping: true
+max_norm: 1.0
+scheduler: cosine
+warmup: true
+warmup_epochs: 2
+seed: 0
+
+model_type: vint_pointgoal
+obs_encoder: efficientnet-b0
+obs_encoding_size: 512
+mha_num_attention_heads: 4
+mha_num_attention_layers: 4
+mha_ff_dim_factor: 4
+late_fusion: false
+pg_rcs: true
+pretrained_checkpoint: /root/autodl-tmp/vint_pg_visual_reliance_init.pth
+
+# User constraint: do not update the visual backbone or prediction heads.
+# Only the PointGoal encoder and transformer fusion decoder remain trainable.
+freeze_modules:
+  - obs_encoder
+  - compress_obs_enc
+  - dist_predictor
+  - action_predictor
+module_lr_multipliers:
+  decoder: 0.2
+
+# PointGoal shortcut controls. Evaluation always uses the unmodified PointGoal.
+goal_dropout_prob: 0.30
+goal_angle_noise_std: 0.15
+goal_distance_noise_std: 0.10
+vision_aux_weight: 0.25
+
+balanced_dataset_sampling: true
+normalize: true
+context_type: temporal
+context_size: 5
+alpha: 0.5
+distance:
+  min_dist_cat: 0
+  max_dist_cat: 20
+action:
+  min_dist_cat: 0
+  max_dist_cat: 10
+close_far_threshold: 10
+len_traj_pred: 5
+learn_angle: true
+image_size: [96, 96]
+goal_type: image
+
+datasets:
+  go_stanford:
+    data_folder: /root/autodl-tmp/go_stanford
+    train: /root/autodl-tmp/go_stanford_splits_seed0/train
+    test: /root/autodl-tmp/go_stanford_splits_seed0/val
+    waypoint_spacing: 1
+    end_slack: 0
+    goals_per_obs: 2
+    negative_mining: true
+  huron:
+    data_folder: /root/autodl-tmp/huron_vint_20260904
+    train: /root/autodl-tmp/RVN-Bench-native/models/gnms_levin/train/vint_train/data/data_splits/huron/train
+    test: /root/autodl-tmp/RVN-Bench-native/models/gnms_levin/train/vint_train/data/data_splits/huron/test
+    waypoint_spacing: 1
+    end_slack: 3
+    goals_per_obs: 1
+    negative_mining: true
+
+print_log_freq: 100
+image_log_freq: 0
+num_images_log: 0
+eval_fraction: 0.1
+wandb_log_freq: 100
+eval_freq: 1

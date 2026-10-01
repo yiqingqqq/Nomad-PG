@@ -1,0 +1,149 @@
+seed: 0
+type: SimpleNav_CrossAttn
+###################################################
+model_config:
+  model_type: "lss" # "cross_attn" or "lss"
+  embed_dims: 256
+  k: 16
+###################################################
+train_config:
+  project_folder: logs/tests/simplenav_crossattn/init
+  project_name: eval
+  gpu_num: 1
+  epochs: 1
+  lr: 1.0e-4
+  train: True
+  eval: False
+  description: "Training the raw visual navigation transformer model"
+  map_type: 'occupancy' # occupancy or tsdf
+  optimizer_config:
+    optimizer: adamw
+  scheduler_config: {}
+    # scheduler: "None"
+    # max_norm: 1.
+    # warmup: False
+    # warmup_epochs: 4
+    # cyclic_period: 10
+    # plateau_patience: 3
+    # plateau_factor: 0.5
+  predefined_actions_config:
+    size: 3
+    length: 1.0 # v dt
+    theta: 15 # degree
+  log_config:
+    action_sample_size: 30
+    figure_interval: 5
+  load_config:
+    load: False
+    model_only: True
+    checkpoint_path: logs/tests/simplenav_crossattn/init/training/latest.pth
+###################################################
+dataloader_config:
+# Description: Configuration file for the dataset loader
+  dataset_config:
+    # About the dataset
+    version: v0.0.1
+    # About project path and file paths
+    input_dataset_path: datasets/sequor_nfm/processed_data/isaac_dataset/training
+    output_setup_path: datasets/sequor_nfm/data_setup/isaac_dataset/training
+    data_config_file: 'data_config.yaml'
+    # image_file: {'front_stereo_camera/left': '{}_front_left_rgb.png'}
+    # image_file: {'front_0/left': '{}.jpg', 'front_0/right': '{}_front_0_right_rgb.jpg'}
+    image_file: {'front_0/left_depth': '{}_front_0_left_depth.tiff', 'front_0/left_rgb': '{}.jpg'}
+    image_to_camera_name: {'front_0/left_depth': 'front_0/left', 'front_0/left_rgb': 'front_0/left'}
+    traj_data_file: 'traj_data.pkl'
+
+    # About initializations
+    split_data: False
+    split_ratio: 0.9
+    normalize_length: False
+
+    # Camera normalization ratio
+    camera_normalization_ratio: 0.4
+
+    # About target factor
+    # robot_velocity_factor: 0.625
+    target_normalization_info:
+      robot_scale: 0.355
+      robot_velocity: 1.0
+      model_inference_frequency: 4.0
+      action_inference_frequency: 4.0
+    ### Data will be normalized with following scales
+    # length_scale = robot_velocity / action_inference_frequency
+    # time_scale = 1.0 / action_inference_frequency
+    ### The model will be function of following factors
+    # robot_scale_factor = robot_scale / length_scale: How big is the robot
+    # model_action_frequency_ratio = model_inference_frequency / action_inference_frequency: How frequently the model is called
+    ###
+    memory_size: 0 # context_size
+    lookahead_action_size: 8
+    goal_method: 'fixed' # 'sample' or 'fixed'
+    global_map_file:
+      map_file: 'global_occupancy_map.png'
+      config_file: 'global_occupancy_map.yaml'
+
+    additional_outputs:
+      egocentric_map: # In normalized coordinates
+        map_type: ['occupancy', 'tsdf']
+        origin: [0.0, -5.0] # x, y
+        resolution: 0.05 # unit_length / cell
+        size: [200, 200] # x, y
+      camera_info:
+        camera_names: ['front_0/left_depth']
+
+  dataloader_config:
+    train:
+      batch_size: 4
+    eval:
+      batch_size: 8
+
+#   sampler_config:
+#     train:
+#       type: torch.utils.data.distributed.DistributedSampler
+#       args:
+#         shuffle: True
+#     eval:
+#       type: torch.utils.data.distributed.DistributedSampler
+#       args:
+#         shuffle: False
+###################################################
+implementation_config:
+  gpu_id: 0
+  project_folder: logs/tests/simplenav_crossattn_lss/
+  project_name: closed_loop
+  # project_folder: logs/test_closed_loop
+  # project_name: test_modified
+  load_config:
+    checkpoint_path: agents/weights/simplenav_crossattn_lss.pth
+  main_camera: 'front_0/left'
+  camera_normalization_ratio: 0.4
+  lookahead_action_size: 16 # lookahead_action_size
+  robot_config:
+    robot_size: 0.2
+    robot_inference_rate: 4
+    robot_velocity: 1.0
+    camera_locations:
+      front_0/left:
+      - 0.2
+      - 0.075
+      - 0.6
+      front_0/right:
+      - 0.2
+      - -0.075
+      - 0.6
+    camera_names:
+    - front_0/left
+    - front_0/right
+    camera_orientations:
+      front_0/left:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 1.0
+      front_0/right:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 1.0
+  visualize: False
+###################################################

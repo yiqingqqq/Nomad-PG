@@ -1,0 +1,119 @@
+NoMAD-PG HM3D PointNav migration manifest
+Generated: 2026-09-28; updated 2026-09-29 Asia/Shanghai
+Remote: root@connect.cqa1.seetacloud.com:31834
+Local root: /home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928
+Transfer method: rsync archive mode with --partial --append-verify; no --delete
+
+PRE-FLIGHT
+Local filesystem: /dev/nvme1n1p2 ext4, 938G total, 737G available before transfer
+Remote paths were checked individually before transfer.
+
+A. RVN-Bench-native
+Source: /root/autodl-tmp/RVN-Bench-native/
+Target: /home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/RVN-Bench-native/
+Remote du -sb: 1722142625 bytes
+Local du -sb: 1722577158 bytes
+Rsync logical size: 1721950470 bytes
+Rsync inventory: 1492 entries (446 regular files, 145 directories, 901 symlinks)
+Verification: PASS; checksum dry-run found 0 created files and 0 regular files requiring transfer
+Status: downloaded completely relative to the specified source path
+
+B. habitat-lab
+Source: /root/autodl-tmp/habitat-lab/
+Target: /home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/habitat-lab/
+Remote du -sb: 2143956378 bytes
+Local du -sb: 2144693145 bytes
+Rsync logical size: 2143591321 bytes
+Rsync inventory: 2819 entries (2559 regular files, 257 directories, 3 symlinks)
+Verification: PASS; checksum dry-run found 0 created files and 0 regular files requiring transfer
+Status: downloaded completely relative to the specified source path
+
+C. NoMAD-PG checkpoint
+Originally supplied path: /root/autodl-fs/RVN-Bench-nomad-runs/rvn_nomad_gostanford_huron_stage1_resume/nomad_pg_stage1_gostanford_huron_resume_2026_09_24_11_38_06/ema_3.pth
+Located source: /autodl-fs/data/RVN-Bench-nomad-runs/rvn_nomad_gostandford_huron_stage1_resume/nomad_pg_stage1_gostandford_huron_resume_2026_09_24_11_38_06/ema_3.pth
+Path correction: the located run uses "gostandford" rather than "gostanford"; run type and timestamp match exactly.
+Target: /home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/checkpoints/rvn_nomad_gostandford_huron_stage1_resume/nomad_pg_stage1_gostandford_huron_resume_2026_09_24_11_38_06/ema_3.pth
+Size: 54027042 bytes
+Remote SHA-256: fd3d7c3605ce63ebbe278829c94c9b36b4e1bb7bbe1ccaffe351a604de1ed5ea
+Local SHA-256: fd3d7c3605ce63ebbe278829c94c9b36b4e1bb7bbe1ccaffe351a604de1ed5ea
+Verification: PASS; remote and local SHA-256 match
+Status: complete
+
+D. PointNav training curriculum
+Source: /root/autodl-tmp/RVN-Bench-pointnav-curriculum/train_v2/
+Target: /home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/pointnav-curriculum/train_v2/
+Remote du -sb: 3279058 bytes
+Local du -sb: 3283019 bytes
+Rsync logical size: 3278923 bytes
+Rsync inventory: 6 entries (5 regular files, 1 directory)
+Verification: PASS; checksum dry-run found 0 created files and 0 regular files requiring transfer
+Content: direct.json.gz, detour.json.gz, turn.json.gz, mixed.json.gz, summary.json; all non-empty
+Status: complete
+
+E. Frozen validation/test protocol
+Source: /root/autodl-tmp/RVN-Bench-interactive-runs/ppo_v2_frozen_bs256/protocol/
+Target: /home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/protocol/
+Remote du -sb: 19184486 bytes
+Local du -sb: 19184486 bytes
+Rsync logical size: 19180390 bytes
+Rsync inventory: 8 entries (7 regular files, 1 directory)
+Verification: PASS; checksum dry-run found 0 created files and 0 regular files requiring transfer
+Required protocol files: manifest.json PRESENT; validation.json.gz PRESENT; test.json.gz PRESENT
+Additional files: train_epoch_000.json.gz, train_epoch_001.json.gz, train_epoch_002.json.gz, validation_rgb_bank.pth
+Status: complete
+
+TOTAL DOWNLOADED LOGICAL SIZE
+48137776179 bytes (approximately 44.83 GiB), excluding directory metadata and verification reports
+Local migration size: 48143507708 bytes by du -sb; approximately 45G by du -sh
+
+REQUIRED RVN-Bench-native FILES
+scripts/train_vint_pg_ppo_v2.py: PRESENT, 27400 bytes
+scripts/train_vint_pg_repeatcollision.py: PRESENT, 28667 bytes
+logs/hm3d_pointnav/nomad_pg_paired_normal_100.json: PRESENT, 39986 bytes
+logs/hm3d_pointnav/nomad_pg_paired_black_100.json: PRESENT, 39976 bytes
+logs/hm3d_pointnav/nomad_pg_paired_angle_flip_100.json: PRESENT, 39614 bytes
+logs/hm3d_pointnav/nomad_pg_paired_pointgoal_rule_100.json: PRESENT, 38267 bytes
+
+POINTNAV DATA VALIDATION
+habitat-lab/data/datasets/pointnav: PRESENT
+Regular files: 1384
+Regular-file bytes: 1039485812
+Zero-byte regular files: 0
+All .gz files under PointNav data, curriculum, and protocol passed gzip -t.
+
+HM3D SCENE VALIDATION
+Additional source discovered through the absolute Habitat/RVN links:
+  /autodl-fs/data/RVN-Bench-shared/habitat-data/versioned_data/hm3d-0.2/hm3d/
+Local target:
+  /home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/habitat-data/versioned_data/hm3d-0.2/hm3d/
+Remote du -sb before transfer: 44199491777 bytes
+Local du -sb after transfer: 44199524545 bytes
+Local regular-file bytes: 44195747916
+Regular files: 2198
+Regular .glb files: 1095
+Regular .navmesh files: 910
+Zero-byte regular files: 0
+Final full-source rsync completed successfully and transferred only four top-level metadata/configuration entries after the partitioned downloads.
+Remote checksum dry-run limitation: the remote SSH gateway temporarily closed new connections after the long transfer, so a second full 42G checksum pass could not start. File counts, types, non-empty checks, source/target sizes, and successful final rsync were used for validation.
+habitat-lab/data/scene_datasets/hm3d remains an absolute symlink to:
+  /autodl-fs/data/RVN-Bench-shared/habitat-data/versioned_data/hm3d-0.2/hm3d
+Status: HM3D episode/PointNav data and scene geometry are locally present; absolute symlinks require retargeting or mount-path configuration before use.
+
+SYMLINK VALIDATION
+RVN-Bench-native symlinks: 901
+RVN-Bench-native unresolved absolute symlinks locally: 901
+Target grouping: 900 under /root/autodl-fs/RVN-Bench-shared/hm3d; 1 under /root/autodl-fs/RVN-Bench-shared/weights
+Full list: /home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/broken_symlinks.txt
+Full-list SHA-256: c59efb4f7dbd3c73a0037fdaa5a36180dd043fe9b82dd15361056f9c5d31a96d
+Additional habitat-lab absolute HM3D links are unresolved locally:
+  data/scene_datasets/hm3d -> /autodl-fs/data/RVN-Bench-shared/habitat-data/versioned_data/hm3d-0.2/hm3d
+  data/scene_datasets/hm3d_semantic_v0.2 -> /autodl-fs/data/RVN-Bench-shared/habitat-data/versioned_data/hm3d-0.2/hm3d
+All migration-tree symlinks: 905
+All unresolved absolute symlinks: 904
+Complete unresolved absolute-link list: /home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/all_unresolved_absolute_symlinks.txt
+Complete-list SHA-256: 31154ecf094e001667935ddcee6ee7924fa978109257225eba8f1562d75fd0c2
+
+READINESS
+Ready to hand to the next Codex for environment configuration and NoMAD-PG PPO trainer work.
+Required configuration step: retarget the recorded absolute HM3D and weight symlinks, or reproduce the expected mount paths, before running training.
+No training, source-code modification, package installation, or environment upgrade was performed.

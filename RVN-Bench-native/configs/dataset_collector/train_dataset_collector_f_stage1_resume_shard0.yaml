@@ -1,0 +1,70 @@
+n_trajectories_per_scene: 100
+allow_stairs: false
+set_start_rot_toward_goal: false
+min_dist_between_waypoints: 4.0
+max_dist_between_waypoints: 8.0
+dist_to_goal_threshold: 0.36
+robot_radius: 0.18
+robot_height: 1.0
+move_amount: 0.25
+rotate_amount: 30.0
+dt: 0.25
+margin_to_obst: 0.1
+sim_settings:
+  color_sensor: true
+  depth_sensor: true
+  default_agent: 0
+  height: 256
+  width: 256
+  sensor_height: 0.6
+scene_dir: data/scene_datasets/hm3d/train/
+scene_ids:
+- 00003-NtVbfPCkBFy/NtVbfPCkBFy.basis.glb
+- 00004-VqCaAuuoeWk/VqCaAuuoeWk.basis.glb
+- 00005-yPKGKBCyYx8/yPKGKBCyYx8.basis.glb
+- 00006-HkseAnWCgqk/HkseAnWCgqk.basis.glb
+- 00007-UQuchpekHRJ/UQuchpekHRJ.basis.glb
+- 00008-VYnUX657cVo/VYnUX657cVo.basis.glb
+- 00009-vLpv2VX547B/vLpv2VX547B.basis.glb
+- 00010-DBjEcHFg4oq/DBjEcHFg4oq.basis.glb
+- 00011-1W61QJVDBqe/1W61QJVDBqe.basis.glb
+- 00012-kDgLKdMd5X8/kDgLKdMd5X8.basis.glb
+- 00013-sfbj7jspYWj/sfbj7jspYWj.basis.glb
+- 00014-nYYcLpSzihC/nYYcLpSzihC.basis.glb
+- 00015-LPwS1aEGXBb/LPwS1aEGXBb.basis.glb
+- 00016-qk9eeNeR4vw/qk9eeNeR4vw.basis.glb
+- 00017-oEPjPNSPmzL/oEPjPNSPmzL.basis.glb
+- 00018-as8Y8AYx6yW/as8Y8AYx6yW.basis.glb
+- 00019-AfKhsVmG8L4/AfKhsVmG8L4.basis.glb
+- 00020-XYyR54sxe6b/XYyR54sxe6b.basis.glb
+- 00021-yQESfVcg18k/yQESfVcg18k.basis.glb
+- 00022-gmuS7Wgsbrx/gmuS7Wgsbrx.basis.glb
+- 00023-zepmXAdrpjR/zepmXAdrpjR.basis.glb
+- 00024-XNoaAZwsWKk/XNoaAZwsWKk.basis.glb
+- 00025-ixTj1aTMup2/ixTj1aTMup2.basis.glb
+- 00026-tzaZQQmUVXZ/tzaZQQmUVXZ.basis.glb
+scene_dataset_config_files:
+- hm3d_annotated_train_basis.scene_dataset_config.json
+- hm3d_annotated_train_basis.scene_dataset_config.json
+- hm3d_annotated_train_basis.scene_dataset_config.json
+- hm3d_annotated_train_basis.scene_dataset_config.json
+- hm3d_annotated_train_basis.scene_dataset_config.json
+- hm3d_annotated_train_basis.scene_dataset_config.json
+- hm3d_annotated_train_basis.scene_dataset_config.json
+- hm3d_annotated_train_basis.scene_dataset_config.json
+- hm3d_annotated_train_basis.scene_dataset_config.json
+- hm3d_annotated_train_basis.scene_dataset_config.json
+- hm3d_annotated_train_basis.scene_dataset_config.json
+- hm3d_annotated_train_basis.scene_dataset_config.json
+- hm3d_annotated_train_basis.scene_dataset_config.json
+- hm3d_annotated_train_basis.scene_dataset_config.json
+- hm3d_annotated_train_basis.scene_dataset_config.json
+- hm3d_annotated_train_basis.scene_dataset_config.json
+- hm3d_annotated_train_basis.scene_dataset_config.json
+- hm3d_annotated_train_basis.scene_dataset_config.json
+- hm3d_annotated_train_basis.scene_dataset_config.json
+- hm3d_annotated_train_basis.scene_dataset_config.json
+- hm3d_annotated_train_basis.scene_dataset_config.json
+- hm3d_annotated_train_basis.scene_dataset_config.json
+- hm3d_annotated_train_basis.scene_dataset_config.json
+- hm3d_annotated_train_basis.scene_dataset_config.json

@@ -1,0 +1,49 @@
+allow_stairs: false
+randomize_start_rotation: true
+randomize_waypoint_rotation: false
+
+max_waypoints_per_episode: 32
+max_steps_per_waypoint: 200
+
+min_dist_between_waypoints: 4.0
+max_dist_between_waypoints: 8.0
+move_amount: 0.25
+dist_to_goal_threshold: 0.36
+coll_move_diff_threshold: 0.001
+
+margin_to_obst: 0.1
+robot_radius: 0.18
+robot_height: 1.0
+
+sim_settings:
+  color_sensor: true
+  default_agent: 0
+  height: 256
+  width: 256
+  sensor_height: 0.6
+
+scene_dir: data/scene_datasets/hm3d_example/minival/
+scene_ids: [
+  "00800-TEEsavR23oF/TEEsavR23oF.basis.glb",
+  "00801-HaxA7YrQdEC/HaxA7YrQdEC.basis.glb",
+  "00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+  "00803-k1cupFYWXJ6/k1cupFYWXJ6.basis.glb",
+  "00804-BHXhpBwSMLh/BHXhpBwSMLh.basis.glb",
+  "00805-SUHsP6z2gcJ/SUHsP6z2gcJ.basis.glb",
+  "00806-tQ5s4ShP627/tQ5s4ShP627.basis.glb",
+  "00807-rsggHU7g7dh/rsggHU7g7dh.basis.glb",
+  "00808-y9hTuugGdiq/y9hTuugGdiq.basis.glb",
+  "00809-Qpor2mEya8F/Qpor2mEya8F.basis.glb",
+]
+scene_dataset_config_files: [
+  "hm3d_annotated_minival_basis.scene_dataset_config.json",
+  "hm3d_annotated_minival_basis.scene_dataset_config.json",
+  "hm3d_annotated_minival_basis.scene_dataset_config.json",
+  "hm3d_annotated_minival_basis.scene_dataset_config.json",
+  "hm3d_annotated_minival_basis.scene_dataset_config.json",
+  "hm3d_annotated_minival_basis.scene_dataset_config.json",
+  "hm3d_annotated_minival_basis.scene_dataset_config.json",
+  "hm3d_annotated_minival_basis.scene_dataset_config.json",
+  "hm3d_annotated_minival_basis.scene_dataset_config.json",
+  "hm3d_annotated_minival_basis.scene_dataset_config.json",
+]

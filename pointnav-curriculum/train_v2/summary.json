@@ -1,0 +1,17 @@
+{
+  "seed": 270927,
+  "source": "/root/autodl-tmp/habitat-lab/data/datasets/pointnav/hm3d/train/content",
+  "thresholds": {
+    "direct": "detour_ratio <= 1.08 and heading_error <= 30 deg",
+    "turn": "detour_ratio <= 1.20 and heading_error >= 60 deg",
+    "detour": "detour_ratio >= 1.25"
+  },
+  "counts": {
+    "direct": 5000,
+    "turn": 5000,
+    "detour": 5000
+  },
+  "mixed": 15000,
+  "skipped": 1898951,
+  "contains_expert_trajectories": false
+}

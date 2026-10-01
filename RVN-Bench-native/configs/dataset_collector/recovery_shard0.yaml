@@ -1,0 +1,26 @@
+n_trajectories_per_scene: 50
+allow_stairs: false
+set_start_rot_toward_goal: false
+min_dist_between_waypoints: 4.0
+max_dist_between_waypoints: 8.0
+dist_to_goal_threshold: 0.36
+robot_radius: 0.18
+robot_height: 1.0
+move_amount: 0.25
+rotate_amount: 30.0
+dt: 0.25
+margin_to_obst: 0.1
+sim_settings: {color_sensor: true, depth_sensor: true, default_agent: 0, height: 256, width: 256, sensor_height: 0.6}
+scene_dir: data/scene_datasets/hm3d/train/
+scene_ids:
+  - 00000-kfPV7w3FaU5/kfPV7w3FaU5.basis.glb
+  - 00001-UVdNNRcVyV1/UVdNNRcVyV1.basis.glb
+  - 00002-FxCkHAfgh7A/FxCkHAfgh7A.basis.glb
+  - 00003-NtVbfPCkBFy/NtVbfPCkBFy.basis.glb
+  - 00004-VqCaAuuoeWk/VqCaAuuoeWk.basis.glb
+scene_dataset_config_files:
+  - hm3d_annotated_train_basis.scene_dataset_config.json
+  - hm3d_annotated_train_basis.scene_dataset_config.json
+  - hm3d_annotated_train_basis.scene_dataset_config.json
+  - hm3d_annotated_train_basis.scene_dataset_config.json
+  - hm3d_annotated_train_basis.scene_dataset_config.json

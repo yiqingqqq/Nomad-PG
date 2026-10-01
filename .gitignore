@@ -1,0 +1,27 @@
+# Local datasets and simulator assets
+/habitat-data/
+/runtime/habitat-data/
+
+# Python environments and generated runtime state
+/.conda-env/
+/.venv/
+/.miniforge/
+/runs/
+/stage1_data/
+/runtime/
+
+# Nested repository metadata and local outputs
+**/.git/
+**/__pycache__/
+**/*.py[cod]
+**/outputs/
+**/logs/
+**/weights/
+**/wandb/
+
+# Local backup snapshots
+*.bak
+*.bak_*
+*.before_*
+*.pre_*
+*.orig

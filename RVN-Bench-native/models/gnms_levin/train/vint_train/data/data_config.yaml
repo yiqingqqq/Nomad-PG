@@ -1,0 +1,393 @@
+
+# global params for diffusion model
+# normalized min and max
+action_stats:
+  min: [-2.5, -4] # [min_dx, min_dy]
+  max: [5, 4] # [max_dx, max_dy]
+
+# data specific params
+recon:
+  metric_waypoint_spacing: 0.25 # average spacing between waypoints (meters)
+
+  # OPTIONAL (FOR VISUALIZATION ONLY)
+  camera_metrics: # https://docs.opencv.org/4.x/dc/dbb/tutorial_py_calibration.html
+    camera_height: 0.95 # meters
+    camera_x_offset: 0.45 # distance between the center of the robot and the forward facing camera
+    camera_matrix:
+      fx: 272.547000
+      fy: 266.358000
+      cx: 320.000000
+      cy: 220.000000
+    dist_coeffs:
+      k1: -0.038483
+      k2: -0.010456
+      p1: 0.003930
+      p2: -0.001007
+      k3: 0.0
+
+isaac_guro_jackal_hawk:
+  metric_waypoint_spacing: 0.25
+  
+  camera_metrics:
+    camera_height: 0.6
+    camera_x_offset: 0.2 # distance between the center of the robot and the forward facing camera
+    camera_matrix:
+      fx: 478.9057779746938
+      fy: 478.90580969137113
+      cx: 480.0
+      cy: 300.0
+    dist_coeffs:
+      k1: 0.147811
+      k2: -0.032313
+      p1: -0.000194
+      p2: -0.000035
+      k3: 0.008823
+
+habitat_hm3d_d2_discrete:
+  metric_waypoint_spacing: 0.25
+
+  camera_metrics:
+    camera_height: 0.6
+    camera_x_offset: 0.0
+    camera_matrix:
+      fx: 128.0
+      fy: 128.0
+      cx: 128.0
+      cy: 128.0
+    dist_coeffs:
+      k1: 0.0
+      k2: 0.0
+      p1: 0.0
+      p2: 0.0
+      k3: 0.0
+
+habitat_hm3d_d3_discrete:
+  metric_waypoint_spacing: 0.25
+
+  camera_metrics:
+    camera_height: 0.6
+    camera_x_offset: 0.0
+    camera_matrix:
+      fx: 128.0
+      fy: 128.0
+      cx: 128.0
+      cy: 128.0
+    dist_coeffs:
+      k1: 0.0
+      k2: 0.0
+      p1: 0.0
+      p2: 0.0
+      k3: 0.0
+
+habitat_hm3d_hdsq4_discrete:
+  metric_waypoint_spacing: 0.25
+
+  camera_metrics:
+    camera_height: 0.6
+    camera_x_offset: 0.0
+    camera_matrix:
+      fx: 128.0
+      fy: 128.0
+      cx: 128.0
+      cy: 128.0
+    dist_coeffs:
+      k1: 0.0
+      k2: 0.0
+      p1: 0.0
+      p2: 0.0
+      k3: 0.0
+
+habitat_hm3d_sq4_discrete:
+  metric_waypoint_spacing: 0.25
+
+  camera_metrics:
+    camera_height: 0.6
+    camera_x_offset: 0.0
+    camera_matrix:
+      fx: 128.0
+      fy: 128.0
+      cx: 128.0
+      cy: 128.0
+    dist_coeffs:
+      k1: 0.0
+      k2: 0.0
+      p1: 0.0
+      p2: 0.0
+      k3: 0.0
+
+habitat_hm3d_q1_discrete:
+  metric_waypoint_spacing: 0.25
+
+  camera_metrics:
+    camera_height: 0.6
+    camera_x_offset: 0.0
+    camera_matrix:
+      fx: 128.0
+      fy: 128.0
+      cx: 128.0
+      cy: 128.0
+    dist_coeffs:
+      k1: 0.0
+      k2: 0.0
+      p1: 0.0
+      p2: 0.0
+      k3: 0.0
+
+
+habitat:
+  metric_waypoint_spacing: 0.25
+
+  camera_metrics:
+    camera_height: 0.6
+    camera_x_offset: 0.0
+    camera_matrix:
+      fx: 128.0
+      fy: 128.0
+      cx: 128.0
+      cy: 128.0
+    dist_coeffs:
+      k1: 0.0
+      k2: 0.0
+      p1: 0.0
+      p2: 0.0
+      k3: 0.0
+
+habitat_hm3d_q2_discrete:
+  metric_waypoint_spacing: 0.25
+
+  camera_metrics:
+    camera_height: 0.6
+    camera_x_offset: 0.0
+    camera_matrix:
+      fx: 128.0
+      fy: 128.0
+      cx: 128.0
+      cy: 128.0
+    dist_coeffs:
+      k1: 0.0
+      k2: 0.0
+      p1: 0.0
+      p2: 0.0
+      k3: 0.0
+
+habitat_hm3d_q4_discrete:
+  metric_waypoint_spacing: 0.25
+
+  camera_metrics:
+    camera_height: 0.6
+    camera_x_offset: 0.0
+    camera_matrix:
+      fx: 128.0
+      fy: 128.0
+      cx: 128.0
+      cy: 128.0
+    dist_coeffs:
+      k1: 0.0
+      k2: 0.0
+      p1: 0.0
+      p2: 0.0
+      k3: 0.0
+
+habitat_hm3d_f1_discrete:
+  metric_waypoint_spacing: 0.25
+
+  camera_metrics:
+    camera_height: 0.6
+    camera_x_offset: 0.0
+    camera_matrix:
+      fx: 128.0
+      fy: 128.0
+      cx: 128.0
+      cy: 128.0
+    dist_coeffs:
+      k1: 0.0
+      k2: 0.0
+      p1: 0.0
+      p2: 0.0
+      k3: 0.0
+
+habitat_hm3d_f2_discrete:
+  metric_waypoint_spacing: 0.25
+
+  camera_metrics:
+    camera_height: 0.6
+    camera_x_offset: 0.0
+    camera_matrix:
+      fx: 128.0
+      fy: 128.0
+      cx: 128.0
+      cy: 128.0
+    dist_coeffs:
+      k1: 0.0
+      k2: 0.0
+      p1: 0.0
+      p2: 0.0
+      k3: 0.0
+
+habitat_hm3d_f3_discrete:
+  metric_waypoint_spacing: 0.25
+
+  camera_metrics:
+    camera_height: 0.6
+    camera_x_offset: 0.0
+    camera_matrix:
+      fx: 128.0
+      fy: 128.0
+      cx: 128.0
+      cy: 128.0
+    dist_coeffs:
+      k1: 0.0
+      k2: 0.0
+      p1: 0.0
+      p2: 0.0
+      k3: 0.0
+
+habitat_hm3d_f4_discrete:
+  metric_waypoint_spacing: 0.25
+
+  camera_metrics:
+    camera_height: 0.6
+    camera_x_offset: 0.0
+    camera_matrix:
+      fx: 128.0
+      fy: 128.0
+      cx: 128.0
+      cy: 128.0
+    dist_coeffs:
+      k1: 0.0
+      k2: 0.0
+      p1: 0.0
+      p2: 0.0
+      k3: 0.0
+
+habitat_hm3d_f3_discrete_single_neg:
+  metric_waypoint_spacing: 0.25
+
+  camera_metrics:
+    camera_height: 0.6
+    camera_x_offset: 0.0
+    camera_matrix:
+      fx: 128.0
+      fy: 128.0
+      cx: 128.0
+      cy: 128.0
+    dist_coeffs:
+      k1: 0.0
+      k2: 0.0
+      p1: 0.0
+      p2: 0.0
+      k3: 0.0
+
+habitat_hm3d_f5_discrete_96:
+  metric_waypoint_spacing: 0.25
+
+  camera_metrics:
+    camera_height: 0.6
+    camera_x_offset: 0.0
+    camera_matrix:
+      fx: 48.0
+      fy: 48.0
+      cx: 48.0
+      cy: 48.0
+    dist_coeffs:
+      k1: 0.0
+      k2: 0.0
+      p1: 0.0
+      p2: 0.0
+      k3: 0.0
+
+habitat_hm3d_f_10_discrete_single_neg:
+  metric_waypoint_spacing: 0.25
+
+  camera_metrics:
+    camera_height: 0.6
+    camera_x_offset: 0.0
+    camera_matrix:
+      fx: 128.0
+      fy: 128.0
+      cx: 128.0
+      cy: 128.0
+    dist_coeffs:
+      k1: 0.0
+      k2: 0.0
+      p1: 0.0
+      p2: 0.0
+      k3: 0.0
+
+habitat_hm3d:
+  metric_waypoint_spacing: 0.25
+
+  camera_metrics:
+    camera_height: 0.6
+    camera_x_offset: 0.0
+    camera_matrix:
+      fx: 128.0
+      fy: 128.0
+      cx: 128.0
+      cy: 128.0
+    dist_coeffs:
+      k1: 0.0
+      k2: 0.0
+      p1: 0.0
+      p2: 0.0
+      k3: 0.0
+
+rvn_bench_eval:
+  metric_waypoint_spacing: 0.25
+
+  camera_metrics:
+    camera_height: 0.6
+    camera_x_offset: 0.0
+    camera_matrix:
+      fx: 128.0
+      fy: 128.0
+      cx: 128.0
+      cy: 128.0
+    dist_coeffs:
+      k1: 0.0
+      k2: 0.0
+      p1: 0.0
+      p2: 0.0
+      k3: 0.0
+
+scand:
+  metric_waypoint_spacing: 0.38
+
+tartan_drive:
+  metric_waypoint_spacing: 0.72
+
+go_stanford:
+  metric_waypoint_spacing: 0.12
+
+huron:
+  # Median physical displacement between consecutive logged frames, measured
+  # from the uploaded HuRoN trajectories.
+  metric_waypoint_spacing: 0.2456818
+
+# private datasets:
+cory_hall:
+  metric_waypoint_spacing: 0.06
+
+seattle:
+  metric_waypoint_spacing: 0.35
+
+racer:
+  metric_waypoint_spacing: 0.38
+
+carla_intvns:
+  metric_waypoint_spacing: 1.39
+
+carla_cil:
+  metric_waypoint_spacing: 1.27
+
+carla_intvns:
+  metric_waypoint_spacing: 1.39
+
+carla:
+  metric_waypoint_spacing: 1.59
+  image_path_func: get_image_path
+
+sacson:
+  metric_waypoint_spacing: 0.255
+
+# add your own dataset params here:

@@ -1,0 +1,83 @@
+# Stage 1 of the HuRoN protocol: GoStanford + HuRoN, dataset-level 50/50.
+# Freeze the EfficientNet visual encoder + transformer decoder; train only the
+# PointGoal MLP (goal_encoder) and prediction heads so [d, cos, sin] maps into
+# the pretrained token space without letting the model shortcut to goal-only.
+project_name: rvn_vint_gostandford_huron_stage1
+run_name: vint_pg_stage1_gostandford_huron
+log_root: /root/autodl-tmp/RVN-Bench-gostandford-huron-runs
+use_wandb: false
+train: true
+
+batch_size: 64
+eval_batch_size: 64
+epochs: 20
+gpu_ids: [0]
+num_workers: 8
+lr: 0.0001
+optimizer: adamw
+clipping: false
+max_norm: 1.0
+scheduler: cosine
+warmup: true
+warmup_epochs: 4
+seed: 0
+
+model_type: vint_pointgoal
+obs_encoder: efficientnet-b0
+obs_encoding_size: 512
+mha_num_attention_heads: 4
+mha_num_attention_layers: 4
+mha_ff_dim_factor: 4
+late_fusion: false
+pg_rcs: true
+# Converted from the official multi-domain ViNT checkpoint: supplies visual and
+# temporal weights only; the PointGoal MLP is newly initialized.
+pretrained_checkpoint: /root/autodl-fs/RVN-Bench-shared/weights/vint_pg_zero_shot_rcs.pth
+
+# Stage 1 freezing: keep the visual encoder, its projection, and the temporal
+# decoder fixed; learn only the PointGoal encoder and prediction heads.
+freeze_modules: [obs_encoder, compress_obs_enc, decoder]
+
+# Equal dataset-level sampling so HuRoN is not dominated by GoStanford length.
+balanced_dataset_sampling: true
+
+normalize: true
+context_type: temporal
+context_size: 5
+alpha: 0.5
+distance:
+  min_dist_cat: 0
+  max_dist_cat: 20
+action:
+  min_dist_cat: 0
+  max_dist_cat: 10
+close_far_threshold: 10
+len_traj_pred: 5
+learn_angle: true
+image_size: [96, 96]
+goal_type: image
+
+datasets:
+  go_stanford:
+    data_folder: /root/autodl-tmp/go_stanford
+    train: /root/autodl-tmp/go_stanford_splits_seed0/train
+    test: /root/autodl-tmp/go_stanford_splits_seed0/val
+    waypoint_spacing: 1
+    end_slack: 0
+    goals_per_obs: 2
+    negative_mining: true
+  huron:
+    data_folder: /root/autodl-tmp/huron_vint_20260904
+    train: /root/autodl-tmp/RVN-Bench-native/models/gnms_levin/train/vint_train/data/data_splits/huron/train
+    test: /root/autodl-tmp/RVN-Bench-native/models/gnms_levin/train/vint_train/data/data_splits/huron/test
+    waypoint_spacing: 1
+    end_slack: 3
+    goals_per_obs: 1
+    negative_mining: true
+
+print_log_freq: 100
+image_log_freq: 0
+num_images_log: 0
+eval_fraction: 0.1
+wandb_log_freq: 100
+eval_freq: 5
