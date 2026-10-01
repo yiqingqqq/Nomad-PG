@@ -1,0 +1,267 @@
+[
+  {
+    "epoch": 0,
+    "update": {
+      "loss": 0.31028696801513433,
+      "actor": 1.1424679541960359e-05,
+      "critic": 0.6205510850995779,
+      "entropy": 0.9586828276515007,
+      "anchor_kl": 1.5829100275865926e-05,
+      "anchor_l2": 7.327953995423788e-11
+    },
+    "episodes": 23,
+    "steps": 8192,
+    "success": 0.2608695652173913,
+    "spl": 0.13495922616747227,
+    "validation": {
+      "episodes": 100,
+      "sr": 0.4,
+      "spl": 0.2351355326560509,
+      "distance": 6.1886888433620335,
+      "mean_steps": 367.12,
+      "mean_collisions": 142.4,
+      "rgb_mode": "normal",
+      "goal_mode": "normal",
+      "action_counts": {
+        "turn_left": 17250,
+        "move_forward": 17114,
+        "turn_right": 2348
+      },
+      "action_steps": 36712,
+      "forward_rate": 0.46616910002179124,
+      "turn_rate": 0.5338308999782088,
+      "max_consecutive_turns": 188,
+      "recovery_actions": 4580
+    },
+    "black": {
+      "episodes": 100,
+      "sr": 0.16,
+      "spl": 0.08765694207620049,
+      "distance": 7.908073451593518,
+      "mean_steps": 442.27,
+      "mean_collisions": 195.1,
+      "rgb_mode": "black",
+      "goal_mode": "normal",
+      "action_counts": {
+        "move_forward": 21632,
+        "turn_left": 18643,
+        "turn_right": 3952
+      },
+      "action_steps": 44227,
+      "forward_rate": 0.48911298528048475,
+      "turn_rate": 0.5108870147195153,
+      "max_consecutive_turns": 142,
+      "recovery_actions": 6324
+    },
+    "normal_black_sr_gap": 0.24000000000000002,
+    "categories": {
+      "detour": 7,
+      "direct": 9,
+      "turn": 7
+    },
+    "rollout_actions": {
+      "action_counts": {
+        "turn_left": 5015,
+        "move_forward": 3652,
+        "turn_right": 494
+      },
+      "action_steps": 9161,
+      "forward_rate": 0.39864643597860494,
+      "turn_rate": 0.6013535640213951,
+      "max_consecutive_turns": 75,
+      "recovery_actions": 969
+    },
+    "safety_status": "accepted",
+    "timestamp": 1790828765.0567164
+  },
+  {
+    "epoch": 1,
+    "update": {
+      "loss": 0.32540928618982434,
+      "actor": -1.8510851077735424e-05,
+      "critic": 0.6508555943146348,
+      "entropy": 0.9586828276515007,
+      "anchor_kl": 3.949016786464199e-05,
+      "anchor_l2": 2.3663009746099917e-10
+    },
+    "episodes": 26,
+    "steps": 8192,
+    "success": 0.4230769230769231,
+    "spl": 0.2488267642215699,
+    "validation": {
+      "episodes": 100,
+      "sr": 0.37,
+      "spl": 0.2210086930022959,
+      "distance": 6.221407411880791,
+      "mean_steps": 377.21,
+      "mean_collisions": 148.89,
+      "rgb_mode": "normal",
+      "goal_mode": "normal",
+      "action_counts": {
+        "turn_left": 17514,
+        "move_forward": 17759,
+        "turn_right": 2448
+      },
+      "action_steps": 37721,
+      "forward_rate": 0.4707987593117892,
+      "turn_rate": 0.5292012406882108,
+      "max_consecutive_turns": 188,
+      "recovery_actions": 4786
+    },
+    "black": null,
+    "black_evaluated": false,
+    "normal_black_sr_gap": null,
+    "categories": {
+      "turn": 11,
+      "direct": 9,
+      "detour": 6
+    },
+    "rollout_actions": {
+      "action_counts": {
+        "move_forward": 3095,
+        "turn_left": 5496,
+        "turn_right": 415
+      },
+      "action_steps": 9006,
+      "forward_rate": 0.3436597823673107,
+      "turn_rate": 0.6563402176326893,
+      "max_consecutive_turns": 324,
+      "recovery_actions": 814
+    },
+    "safety_status": "accepted",
+    "timestamp": 1790832136.2664812
+  },
+  {
+    "epoch": 2,
+    "update": {
+      "loss": 0.3436567038297653,
+      "actor": 8.490897016599774e-06,
+      "critic": 0.6872964221984148,
+      "entropy": 0.9586828276515007,
+      "anchor_kl": 9.493840479990467e-05,
+      "anchor_l2": 4.74679133673217e-10
+    },
+    "episodes": 25,
+    "steps": 8192,
+    "success": 0.28,
+    "spl": 0.21557632911865965,
+    "validation": {
+      "episodes": 100,
+      "sr": 0.36,
+      "spl": 0.21438891047178393,
+      "distance": 6.256194541119039,
+      "mean_steps": 378.34,
+      "mean_collisions": 144.3,
+      "rgb_mode": "normal",
+      "goal_mode": "normal",
+      "action_counts": {
+        "turn_left": 18145,
+        "move_forward": 17332,
+        "turn_right": 2357
+      },
+      "action_steps": 37834,
+      "forward_rate": 0.4581064650843157,
+      "turn_rate": 0.5418935349156843,
+      "max_consecutive_turns": 188,
+      "recovery_actions": 4627
+    },
+    "black": {
+      "episodes": 100,
+      "sr": 0.15,
+      "spl": 0.08675031997573057,
+      "distance": 7.88579346967861,
+      "mean_steps": 451.1,
+      "mean_collisions": 196.16,
+      "rgb_mode": "black",
+      "goal_mode": "normal",
+      "action_counts": {
+        "move_forward": 21751,
+        "turn_left": 19536,
+        "turn_right": 3823
+      },
+      "action_steps": 45110,
+      "forward_rate": 0.48217690090888937,
+      "turn_rate": 0.5178230990911106,
+      "max_consecutive_turns": 142,
+      "recovery_actions": 6365
+    },
+    "black_evaluated": true,
+    "normal_black_sr_gap": 0.21,
+    "categories": {
+      "detour": 12,
+      "direct": 8,
+      "turn": 5
+    },
+    "rollout_actions": {
+      "action_counts": {
+        "turn_left": 4630,
+        "move_forward": 4107,
+        "turn_right": 566
+      },
+      "action_steps": 9303,
+      "forward_rate": 0.4414704933892293,
+      "turn_rate": 0.5585295066107707,
+      "max_consecutive_turns": 99,
+      "recovery_actions": 1111
+    },
+    "safety_status": "accepted",
+    "timestamp": 1790836689.3624558
+  },
+  {
+    "epoch": 3,
+    "update": {
+      "loss": 0.40412846440449357,
+      "actor": -3.2141979318112135e-06,
+      "critic": 0.8082633633166552,
+      "entropy": 0.9586828276515007,
+      "anchor_kl": 0.00011231579810555559,
+      "anchor_l2": 5.863908438680232e-10
+    },
+    "episodes": 26,
+    "steps": 8192,
+    "success": 0.34615384615384615,
+    "spl": 0.1940319193013434,
+    "validation": {
+      "episodes": 100,
+      "sr": 0.36,
+      "spl": 0.21926329427856855,
+      "distance": 6.219837978966535,
+      "mean_steps": 375.76,
+      "mean_collisions": 148.27,
+      "rgb_mode": "normal",
+      "goal_mode": "normal",
+      "action_counts": {
+        "turn_left": 17503,
+        "move_forward": 17632,
+        "turn_right": 2441
+      },
+      "action_steps": 37576,
+      "forward_rate": 0.46923568235043644,
+      "turn_rate": 0.5307643176495636,
+      "max_consecutive_turns": 188,
+      "recovery_actions": 4767
+    },
+    "black": null,
+    "black_evaluated": false,
+    "normal_black_sr_gap": null,
+    "categories": {
+      "turn": 9,
+      "direct": 5,
+      "detour": 12
+    },
+    "rollout_actions": {
+      "action_counts": {
+        "turn_left": 4233,
+        "move_forward": 4575,
+        "turn_right": 641
+      },
+      "action_steps": 9449,
+      "forward_rate": 0.4841782199174516,
+      "turn_rate": 0.5158217800825484,
+      "max_consecutive_turns": 123,
+      "recovery_actions": 1257
+    },
+    "safety_status": "accepted",
+    "timestamp": 1790838280.3196416
+  }
+]

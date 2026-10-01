@@ -1,0 +1,1617 @@
+{
+  "summary": {
+    "episodes": 100,
+    "sr": 0.4,
+    "spl": 0.2351355326560509,
+    "distance": 6.1886888433620335,
+    "mean_steps": 367.12,
+    "mean_collisions": 142.4,
+    "rgb_mode": "normal",
+    "goal_mode": "normal",
+    "action_counts": {
+      "turn_left": 17250,
+      "move_forward": 17114,
+      "turn_right": 2348
+    },
+    "action_steps": 36712,
+    "forward_rate": 0.46616910002179124,
+    "turn_rate": 0.5338308999782088,
+    "max_consecutive_turns": 188,
+    "recovery_actions": 4580
+  },
+  "rows": [
+    {
+      "episode_id": "21",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00838-kJJyRFXVpx2/kJJyRFXVpx2.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 3.720338821411133,
+      "steps": 500,
+      "collisions": 313,
+      "recovery_actions": 103,
+      "action_counts": {
+        "turn_left": 108,
+        "move_forward": 338,
+        "turn_right": 54
+      },
+      "max_consecutive_turns": 19
+    },
+    {
+      "episode_id": "19",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00836-7GAhQPFzMot/7GAhQPFzMot.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 5.907783508300781,
+      "steps": 500,
+      "collisions": 234,
+      "recovery_actions": 76,
+      "action_counts": {
+        "turn_left": 201,
+        "move_forward": 259,
+        "turn_right": 40
+      },
+      "max_consecutive_turns": 18
+    },
+    {
+      "episode_id": "10",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00868-vd3HHTEpmyA/vd3HHTEpmyA.basis.glb",
+      "success": 1.0,
+      "spl": 0.5143395371009108,
+      "distance_to_goal": 0.19023513793945312,
+      "steps": 83,
+      "collisions": 9,
+      "recovery_actions": 2,
+      "action_counts": {
+        "turn_left": 41,
+        "move_forward": 41,
+        "turn_right": 1
+      },
+      "max_consecutive_turns": 15
+    },
+    {
+      "episode_id": "22",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00896-5hGmubEE6ZF/5hGmubEE6ZF.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 9.145346641540527,
+      "steps": 500,
+      "collisions": 280,
+      "recovery_actions": 92,
+      "action_counts": {
+        "turn_left": 166,
+        "move_forward": 288,
+        "turn_right": 46
+      },
+      "max_consecutive_turns": 23
+    },
+    {
+      "episode_id": "2",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00875-66seV3BWPoX/66seV3BWPoX.basis.glb",
+      "success": 1.0,
+      "spl": 0.31386496785923407,
+      "distance_to_goal": 0.12727130949497223,
+      "steps": 163,
+      "collisions": 19,
+      "recovery_actions": 5,
+      "action_counts": {
+        "turn_left": 85,
+        "move_forward": 75,
+        "turn_right": 3
+      },
+      "max_consecutive_turns": 15
+    },
+    {
+      "episode_id": "16",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00868-vd3HHTEpmyA/vd3HHTEpmyA.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 9.102306365966797,
+      "steps": 500,
+      "collisions": 223,
+      "recovery_actions": 72,
+      "action_counts": {
+        "move_forward": 248,
+        "turn_right": 36,
+        "turn_left": 216
+      },
+      "max_consecutive_turns": 24
+    },
+    {
+      "episode_id": "17",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00842-hkr2MGpHD6B/hkr2MGpHD6B.basis.glb",
+      "success": 1.0,
+      "spl": 0.24714287796017878,
+      "distance_to_goal": 0.09593726694583893,
+      "steps": 340,
+      "collisions": 122,
+      "recovery_actions": 39,
+      "action_counts": {
+        "turn_left": 148,
+        "move_forward": 171,
+        "turn_right": 21
+      },
+      "max_consecutive_turns": 16
+    },
+    {
+      "episode_id": "18",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00854-SiKqEZx7Ejt/SiKqEZx7Ejt.basis.glb",
+      "success": 1.0,
+      "spl": 0.7762289387199907,
+      "distance_to_goal": 0.19740167260169983,
+      "steps": 84,
+      "collisions": 32,
+      "recovery_actions": 9,
+      "action_counts": {
+        "turn_left": 26,
+        "move_forward": 53,
+        "turn_right": 5
+      },
+      "max_consecutive_turns": 5
+    },
+    {
+      "episode_id": "20",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "success": 1.0,
+      "spl": 0.9547693819232748,
+      "distance_to_goal": 0.039127666503190994,
+      "steps": 56,
+      "collisions": 9,
+      "recovery_actions": 2,
+      "action_counts": {
+        "turn_left": 18,
+        "move_forward": 37,
+        "turn_right": 1
+      },
+      "max_consecutive_turns": 5
+    },
+    {
+      "episode_id": "18",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00824-Dd4bFSTQ8gi/Dd4bFSTQ8gi.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 16.595911026000977,
+      "steps": 500,
+      "collisions": 46,
+      "recovery_actions": 13,
+      "action_counts": {
+        "turn_left": 411,
+        "move_forward": 82,
+        "turn_right": 7
+      },
+      "max_consecutive_turns": 36
+    },
+    {
+      "episode_id": "19",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00881-u1bkiGRVyu9/u1bkiGRVyu9.basis.glb",
+      "success": 1.0,
+      "spl": 0.2863208952000798,
+      "distance_to_goal": 0.11822371184825897,
+      "steps": 278,
+      "collisions": 60,
+      "recovery_actions": 19,
+      "action_counts": {
+        "turn_left": 157,
+        "move_forward": 111,
+        "turn_right": 10
+      },
+      "max_consecutive_turns": 25
+    },
+    {
+      "episode_id": "23",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00830-5jp3fCRSRjc/5jp3fCRSRjc.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 27.7222843170166,
+      "steps": 500,
+      "collisions": 0,
+      "recovery_actions": 0,
+      "action_counts": {
+        "turn_left": 496,
+        "move_forward": 4
+      },
+      "max_consecutive_turns": 188
+    },
+    {
+      "episode_id": "2",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00880-Nfvxx8J5NCo/Nfvxx8J5NCo.basis.glb",
+      "success": 1.0,
+      "spl": 0.6385843360563229,
+      "distance_to_goal": 0.08891964703798294,
+      "steps": 101,
+      "collisions": 8,
+      "recovery_actions": 2,
+      "action_counts": {
+        "turn_left": 66,
+        "move_forward": 34,
+        "turn_right": 1
+      },
+      "max_consecutive_turns": 18
+    },
+    {
+      "episode_id": "18",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00852-T6nG3E2Uui9/T6nG3E2Uui9.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 9.25892448425293,
+      "steps": 500,
+      "collisions": 165,
+      "recovery_actions": 50,
+      "action_counts": {
+        "move_forward": 230,
+        "turn_left": 245,
+        "turn_right": 25
+      },
+      "max_consecutive_turns": 26
+    },
+    {
+      "episode_id": "9",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00800-TEEsavR23oF/TEEsavR23oF.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 8.279740333557129,
+      "steps": 500,
+      "collisions": 148,
+      "recovery_actions": 48,
+      "action_counts": {
+        "turn_left": 304,
+        "move_forward": 172,
+        "turn_right": 24
+      },
+      "max_consecutive_turns": 27
+    },
+    {
+      "episode_id": "7",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00833-dHwjuKfkRUR/dHwjuKfkRUR.basis.glb",
+      "success": 1.0,
+      "spl": 0.4339531272894303,
+      "distance_to_goal": 0.1251543164253235,
+      "steps": 386,
+      "collisions": 71,
+      "recovery_actions": 20,
+      "action_counts": {
+        "move_forward": 153,
+        "turn_left": 223,
+        "turn_right": 10
+      },
+      "max_consecutive_turns": 23
+    },
+    {
+      "episode_id": "15",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00836-7GAhQPFzMot/7GAhQPFzMot.basis.glb",
+      "success": 1.0,
+      "spl": 0.6832873193376346,
+      "distance_to_goal": 0.09184686094522476,
+      "steps": 136,
+      "collisions": 52,
+      "recovery_actions": 16,
+      "action_counts": {
+        "turn_left": 60,
+        "move_forward": 67,
+        "turn_right": 9
+      },
+      "max_consecutive_turns": 16
+    },
+    {
+      "episode_id": "22",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00880-Nfvxx8J5NCo/Nfvxx8J5NCo.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 8.472346305847168,
+      "steps": 500,
+      "collisions": 174,
+      "recovery_actions": 56,
+      "action_counts": {
+        "turn_left": 288,
+        "move_forward": 184,
+        "turn_right": 28
+      },
+      "max_consecutive_turns": 25
+    },
+    {
+      "episode_id": "2",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00866-XNeHsjL6nBB/XNeHsjL6nBB.basis.glb",
+      "success": 1.0,
+      "spl": 0.4232290330281057,
+      "distance_to_goal": 0.19124312698841095,
+      "steps": 380,
+      "collisions": 210,
+      "recovery_actions": 68,
+      "action_counts": {
+        "move_forward": 239,
+        "turn_left": 107,
+        "turn_right": 34
+      },
+      "max_consecutive_turns": 15
+    },
+    {
+      "episode_id": "23",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00868-vd3HHTEpmyA/vd3HHTEpmyA.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 10.516051292419434,
+      "steps": 500,
+      "collisions": 163,
+      "recovery_actions": 51,
+      "action_counts": {
+        "turn_left": 284,
+        "move_forward": 190,
+        "turn_right": 26
+      },
+      "max_consecutive_turns": 23
+    },
+    {
+      "episode_id": "4",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00828-X7gTkoDHViv/X7gTkoDHViv.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 4.047307968139648,
+      "steps": 500,
+      "collisions": 280,
+      "recovery_actions": 92,
+      "action_counts": {
+        "move_forward": 289,
+        "turn_left": 163,
+        "turn_right": 48
+      },
+      "max_consecutive_turns": 16
+    },
+    {
+      "episode_id": "19",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 4.462831497192383,
+      "steps": 500,
+      "collisions": 272,
+      "recovery_actions": 88,
+      "action_counts": {
+        "turn_left": 168,
+        "move_forward": 288,
+        "turn_right": 44
+      },
+      "max_consecutive_turns": 18
+    },
+    {
+      "episode_id": "21",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00868-vd3HHTEpmyA/vd3HHTEpmyA.basis.glb",
+      "success": 1.0,
+      "spl": 0.6162433053155248,
+      "distance_to_goal": 0.04650484398007393,
+      "steps": 289,
+      "collisions": 91,
+      "recovery_actions": 28,
+      "action_counts": {
+        "move_forward": 134,
+        "turn_right": 15,
+        "turn_left": 140
+      },
+      "max_consecutive_turns": 25
+    },
+    {
+      "episode_id": "22",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00840-z9YwN9M8FpG/z9YwN9M8FpG.basis.glb",
+      "success": 1.0,
+      "spl": 0.5022667699519132,
+      "distance_to_goal": 0.04020734131336212,
+      "steps": 87,
+      "collisions": 26,
+      "recovery_actions": 6,
+      "action_counts": {
+        "move_forward": 54,
+        "turn_right": 3,
+        "turn_left": 30
+      },
+      "max_consecutive_turns": 17
+    },
+    {
+      "episode_id": "15",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00828-X7gTkoDHViv/X7gTkoDHViv.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 14.492414474487305,
+      "steps": 500,
+      "collisions": 280,
+      "recovery_actions": 90,
+      "action_counts": {
+        "move_forward": 335,
+        "turn_left": 117,
+        "turn_right": 48
+      },
+      "max_consecutive_turns": 16
+    },
+    {
+      "episode_id": "3",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00823-7MXmsvcQjpJ/7MXmsvcQjpJ.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 2.312408924102783,
+      "steps": 500,
+      "collisions": 298,
+      "recovery_actions": 98,
+      "action_counts": {
+        "turn_left": 131,
+        "move_forward": 318,
+        "turn_right": 51
+      },
+      "max_consecutive_turns": 15
+    },
+    {
+      "episode_id": "10",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00846-LNg5mXe1BDj/LNg5mXe1BDj.basis.glb",
+      "success": 1.0,
+      "spl": 0.6076938759123494,
+      "distance_to_goal": 0.06725779175758362,
+      "steps": 268,
+      "collisions": 80,
+      "recovery_actions": 24,
+      "action_counts": {
+        "turn_left": 122,
+        "move_forward": 134,
+        "turn_right": 12
+      },
+      "max_consecutive_turns": 23
+    },
+    {
+      "episode_id": "12",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00846-LNg5mXe1BDj/LNg5mXe1BDj.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 5.585249423980713,
+      "steps": 500,
+      "collisions": 313,
+      "recovery_actions": 103,
+      "action_counts": {
+        "turn_left": 107,
+        "move_forward": 333,
+        "turn_right": 60
+      },
+      "max_consecutive_turns": 16
+    },
+    {
+      "episode_id": "8",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "success": 1.0,
+      "spl": 0.414533305925834,
+      "distance_to_goal": 0.039280280470848083,
+      "steps": 85,
+      "collisions": 19,
+      "recovery_actions": 6,
+      "action_counts": {
+        "turn_left": 46,
+        "move_forward": 36,
+        "turn_right": 3
+      },
+      "max_consecutive_turns": 16
+    },
+    {
+      "episode_id": "11",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00865-fsQtJ8t3nTf/fsQtJ8t3nTf.basis.glb",
+      "success": 1.0,
+      "spl": 0.664389084617241,
+      "distance_to_goal": 0.15171530842781067,
+      "steps": 108,
+      "collisions": 26,
+      "recovery_actions": 7,
+      "action_counts": {
+        "turn_left": 52,
+        "move_forward": 52,
+        "turn_right": 4
+      },
+      "max_consecutive_turns": 23
+    },
+    {
+      "episode_id": "0",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00876-mv2HUxq3B53/mv2HUxq3B53.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 16.952022552490234,
+      "steps": 500,
+      "collisions": 5,
+      "recovery_actions": 1,
+      "action_counts": {
+        "turn_left": 458,
+        "move_forward": 41,
+        "turn_right": 1
+      },
+      "max_consecutive_turns": 142
+    },
+    {
+      "episode_id": "12",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00869-MHPLjHsuG27/MHPLjHsuG27.basis.glb",
+      "success": 1.0,
+      "spl": 0.8066491483239164,
+      "distance_to_goal": 0.12393635511398315,
+      "steps": 79,
+      "collisions": 15,
+      "recovery_actions": 4,
+      "action_counts": {
+        "turn_left": 49,
+        "move_forward": 28,
+        "turn_right": 2
+      },
+      "max_consecutive_turns": 25
+    },
+    {
+      "episode_id": "1",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00823-7MXmsvcQjpJ/7MXmsvcQjpJ.basis.glb",
+      "success": 1.0,
+      "spl": 0.5374814298142047,
+      "distance_to_goal": 0.03691614791750908,
+      "steps": 156,
+      "collisions": 13,
+      "recovery_actions": 3,
+      "action_counts": {
+        "turn_left": 96,
+        "move_forward": 58,
+        "turn_right": 2
+      },
+      "max_consecutive_turns": 21
+    },
+    {
+      "episode_id": "17",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00846-LNg5mXe1BDj/LNg5mXe1BDj.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 11.412508010864258,
+      "steps": 500,
+      "collisions": 125,
+      "recovery_actions": 40,
+      "action_counts": {
+        "turn_left": 327,
+        "move_forward": 153,
+        "turn_right": 20
+      },
+      "max_consecutive_turns": 34
+    },
+    {
+      "episode_id": "10",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00828-X7gTkoDHViv/X7gTkoDHViv.basis.glb",
+      "success": 1.0,
+      "spl": 0.46656301093747454,
+      "distance_to_goal": 0.16977928578853607,
+      "steps": 301,
+      "collisions": 37,
+      "recovery_actions": 9,
+      "action_counts": {
+        "move_forward": 136,
+        "turn_left": 160,
+        "turn_right": 5
+      },
+      "max_consecutive_turns": 23
+    },
+    {
+      "episode_id": "4",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00880-Nfvxx8J5NCo/Nfvxx8J5NCo.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 16.355384826660156,
+      "steps": 500,
+      "collisions": 303,
+      "recovery_actions": 100,
+      "action_counts": {
+        "turn_left": 127,
+        "move_forward": 322,
+        "turn_right": 51
+      },
+      "max_consecutive_turns": 18
+    },
+    {
+      "episode_id": "22",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00881-u1bkiGRVyu9/u1bkiGRVyu9.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 2.836421012878418,
+      "steps": 500,
+      "collisions": 313,
+      "recovery_actions": 103,
+      "action_counts": {
+        "move_forward": 337,
+        "turn_left": 111,
+        "turn_right": 52
+      },
+      "max_consecutive_turns": 13
+    },
+    {
+      "episode_id": "9",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00804-BHXhpBwSMLh/BHXhpBwSMLh.basis.glb",
+      "success": 1.0,
+      "spl": 0.5101839462582034,
+      "distance_to_goal": 0.14509208500385284,
+      "steps": 255,
+      "collisions": 63,
+      "recovery_actions": 18,
+      "action_counts": {
+        "turn_left": 124,
+        "move_forward": 122,
+        "turn_right": 9
+      },
+      "max_consecutive_turns": 20
+    },
+    {
+      "episode_id": "18",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00875-66seV3BWPoX/66seV3BWPoX.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 9.552045822143555,
+      "steps": 500,
+      "collisions": 261,
+      "recovery_actions": 86,
+      "action_counts": {
+        "move_forward": 274,
+        "turn_left": 183,
+        "turn_right": 43
+      },
+      "max_consecutive_turns": 18
+    },
+    {
+      "episode_id": "21",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00880-Nfvxx8J5NCo/Nfvxx8J5NCo.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 16.445104598999023,
+      "steps": 500,
+      "collisions": 256,
+      "recovery_actions": 84,
+      "action_counts": {
+        "turn_left": 187,
+        "move_forward": 271,
+        "turn_right": 42
+      },
+      "max_consecutive_turns": 18
+    },
+    {
+      "episode_id": "15",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00835-q3zU7Yy5E5s/q3zU7Yy5E5s.basis.glb",
+      "success": 1.0,
+      "spl": 0.8971475453298617,
+      "distance_to_goal": 0.09114735573530197,
+      "steps": 14,
+      "collisions": 0,
+      "recovery_actions": 0,
+      "action_counts": {
+        "move_forward": 7,
+        "turn_left": 7
+      },
+      "max_consecutive_turns": 3
+    },
+    {
+      "episode_id": "22",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00867-uLz9jNga3kC/uLz9jNga3kC.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 5.301146984100342,
+      "steps": 500,
+      "collisions": 188,
+      "recovery_actions": 59,
+      "action_counts": {
+        "turn_left": 239,
+        "move_forward": 231,
+        "turn_right": 30
+      },
+      "max_consecutive_turns": 26
+    },
+    {
+      "episode_id": "20",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00870-AYpsNQsWncn/AYpsNQsWncn.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 5.474123477935791,
+      "steps": 500,
+      "collisions": 274,
+      "recovery_actions": 90,
+      "action_counts": {
+        "turn_left": 159,
+        "move_forward": 296,
+        "turn_right": 45
+      },
+      "max_consecutive_turns": 16
+    },
+    {
+      "episode_id": "3",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00870-AYpsNQsWncn/AYpsNQsWncn.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 7.116880416870117,
+      "steps": 500,
+      "collisions": 250,
+      "recovery_actions": 82,
+      "action_counts": {
+        "move_forward": 302,
+        "turn_left": 155,
+        "turn_right": 43
+      },
+      "max_consecutive_turns": 16
+    },
+    {
+      "episode_id": "21",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00865-fsQtJ8t3nTf/fsQtJ8t3nTf.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 10.096351623535156,
+      "steps": 500,
+      "collisions": 266,
+      "recovery_actions": 86,
+      "action_counts": {
+        "turn_left": 146,
+        "move_forward": 305,
+        "turn_right": 49
+      },
+      "max_consecutive_turns": 15
+    },
+    {
+      "episode_id": "11",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00886-TPhiubUHKcP/TPhiubUHKcP.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 9.449913024902344,
+      "steps": 500,
+      "collisions": 232,
+      "recovery_actions": 74,
+      "action_counts": {
+        "turn_left": 202,
+        "move_forward": 260,
+        "turn_right": 38
+      },
+      "max_consecutive_turns": 19
+    },
+    {
+      "episode_id": "7",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00846-LNg5mXe1BDj/LNg5mXe1BDj.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 4.923073768615723,
+      "steps": 500,
+      "collisions": 257,
+      "recovery_actions": 84,
+      "action_counts": {
+        "turn_left": 162,
+        "move_forward": 295,
+        "turn_right": 43
+      },
+      "max_consecutive_turns": 14
+    },
+    {
+      "episode_id": "6",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00833-dHwjuKfkRUR/dHwjuKfkRUR.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 12.925544738769531,
+      "steps": 500,
+      "collisions": 238,
+      "recovery_actions": 78,
+      "action_counts": {
+        "move_forward": 285,
+        "turn_left": 176,
+        "turn_right": 39
+      },
+      "max_consecutive_turns": 23
+    },
+    {
+      "episode_id": "20",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00846-LNg5mXe1BDj/LNg5mXe1BDj.basis.glb",
+      "success": 1.0,
+      "spl": 0.6443914561062422,
+      "distance_to_goal": 0.03215871751308441,
+      "steps": 144,
+      "collisions": 60,
+      "recovery_actions": 19,
+      "action_counts": {
+        "move_forward": 81,
+        "turn_left": 53,
+        "turn_right": 10
+      },
+      "max_consecutive_turns": 16
+    },
+    {
+      "episode_id": "6",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00862-LT9Jq6dN3Ea/LT9Jq6dN3Ea.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 14.2404146194458,
+      "steps": 500,
+      "collisions": 134,
+      "recovery_actions": 44,
+      "action_counts": {
+        "turn_left": 341,
+        "move_forward": 137,
+        "turn_right": 22
+      },
+      "max_consecutive_turns": 27
+    },
+    {
+      "episode_id": "18",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00860-RJaJt8UjXav/RJaJt8UjXav.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 7.472298622131348,
+      "steps": 500,
+      "collisions": 295,
+      "recovery_actions": 98,
+      "action_counts": {
+        "move_forward": 301,
+        "turn_right": 49,
+        "turn_left": 150
+      },
+      "max_consecutive_turns": 25
+    },
+    {
+      "episode_id": "14",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00864-QHhQZWdMpGJ/QHhQZWdMpGJ.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 10.81098461151123,
+      "steps": 500,
+      "collisions": 137,
+      "recovery_actions": 44,
+      "action_counts": {
+        "turn_left": 336,
+        "move_forward": 142,
+        "turn_right": 22
+      },
+      "max_consecutive_turns": 30
+    },
+    {
+      "episode_id": "8",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00840-z9YwN9M8FpG/z9YwN9M8FpG.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 13.086312294006348,
+      "steps": 500,
+      "collisions": 214,
+      "recovery_actions": 68,
+      "action_counts": {
+        "move_forward": 268,
+        "turn_left": 198,
+        "turn_right": 34
+      },
+      "max_consecutive_turns": 23
+    },
+    {
+      "episode_id": "12",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00881-u1bkiGRVyu9/u1bkiGRVyu9.basis.glb",
+      "success": 1.0,
+      "spl": 0.600353093298235,
+      "distance_to_goal": 0.06595106422901154,
+      "steps": 54,
+      "collisions": 2,
+      "recovery_actions": 0,
+      "action_counts": {
+        "move_forward": 24,
+        "turn_left": 30
+      },
+      "max_consecutive_turns": 14
+    },
+    {
+      "episode_id": "13",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00889-HMkoS756sz6/HMkoS756sz6.basis.glb",
+      "success": 1.0,
+      "spl": 0.9342668262754494,
+      "distance_to_goal": 0.10440254211425781,
+      "steps": 15,
+      "collisions": 0,
+      "recovery_actions": 0,
+      "action_counts": {
+        "move_forward": 7,
+        "turn_left": 8
+      },
+      "max_consecutive_turns": 5
+    },
+    {
+      "episode_id": "11",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00842-hkr2MGpHD6B/hkr2MGpHD6B.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 13.66183090209961,
+      "steps": 500,
+      "collisions": 235,
+      "recovery_actions": 75,
+      "action_counts": {
+        "turn_left": 200,
+        "move_forward": 262,
+        "turn_right": 38
+      },
+      "max_consecutive_turns": 21
+    },
+    {
+      "episode_id": "18",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "success": 1.0,
+      "spl": 0.8457778564684203,
+      "distance_to_goal": 0.11136967688798904,
+      "steps": 72,
+      "collisions": 16,
+      "recovery_actions": 4,
+      "action_counts": {
+        "move_forward": 32,
+        "turn_left": 38,
+        "turn_right": 2
+      },
+      "max_consecutive_turns": 20
+    },
+    {
+      "episode_id": "12",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00868-vd3HHTEpmyA/vd3HHTEpmyA.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 16.474647521972656,
+      "steps": 500,
+      "collisions": 6,
+      "recovery_actions": 2,
+      "action_counts": {
+        "turn_left": 482,
+        "move_forward": 17,
+        "turn_right": 1
+      },
+      "max_consecutive_turns": 120
+    },
+    {
+      "episode_id": "18",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00842-hkr2MGpHD6B/hkr2MGpHD6B.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 13.152687072753906,
+      "steps": 500,
+      "collisions": 0,
+      "recovery_actions": 0,
+      "action_counts": {
+        "turn_left": 479,
+        "move_forward": 21
+      },
+      "max_consecutive_turns": 82
+    },
+    {
+      "episode_id": "9",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00889-HMkoS756sz6/HMkoS756sz6.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 8.212652206420898,
+      "steps": 500,
+      "collisions": 306,
+      "recovery_actions": 99,
+      "action_counts": {
+        "turn_left": 128,
+        "move_forward": 322,
+        "turn_right": 50
+      },
+      "max_consecutive_turns": 22
+    },
+    {
+      "episode_id": "12",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00860-RJaJt8UjXav/RJaJt8UjXav.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 8.528848648071289,
+      "steps": 500,
+      "collisions": 294,
+      "recovery_actions": 98,
+      "action_counts": {
+        "turn_left": 152,
+        "move_forward": 299,
+        "turn_right": 49
+      },
+      "max_consecutive_turns": 27
+    },
+    {
+      "episode_id": "5",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00808-y9hTuugGdiq/y9hTuugGdiq.basis.glb",
+      "success": 1.0,
+      "spl": 0.46701821006405675,
+      "distance_to_goal": 0.15398657321929932,
+      "steps": 193,
+      "collisions": 69,
+      "recovery_actions": 21,
+      "action_counts": {
+        "move_forward": 100,
+        "turn_left": 82,
+        "turn_right": 11
+      },
+      "max_consecutive_turns": 20
+    },
+    {
+      "episode_id": "10",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00811-7UrtFsADwob/7UrtFsADwob.basis.glb",
+      "success": 1.0,
+      "spl": 0.30378547282399015,
+      "distance_to_goal": 0.030807815492153168,
+      "steps": 248,
+      "collisions": 80,
+      "recovery_actions": 25,
+      "action_counts": {
+        "move_forward": 138,
+        "turn_left": 97,
+        "turn_right": 13
+      },
+      "max_consecutive_turns": 16
+    },
+    {
+      "episode_id": "22",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00875-66seV3BWPoX/66seV3BWPoX.basis.glb",
+      "success": 1.0,
+      "spl": 0.5581052372584309,
+      "distance_to_goal": 0.1854863315820694,
+      "steps": 135,
+      "collisions": 41,
+      "recovery_actions": 13,
+      "action_counts": {
+        "move_forward": 75,
+        "turn_left": 53,
+        "turn_right": 7
+      },
+      "max_consecutive_turns": 9
+    },
+    {
+      "episode_id": "15",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00823-7MXmsvcQjpJ/7MXmsvcQjpJ.basis.glb",
+      "success": 1.0,
+      "spl": 0.6791974878285568,
+      "distance_to_goal": 0.16828694939613342,
+      "steps": 70,
+      "collisions": 10,
+      "recovery_actions": 2,
+      "action_counts": {
+        "turn_left": 42,
+        "move_forward": 27,
+        "turn_right": 1
+      },
+      "max_consecutive_turns": 18
+    },
+    {
+      "episode_id": "2",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00830-5jp3fCRSRjc/5jp3fCRSRjc.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 19.39410972595215,
+      "steps": 500,
+      "collisions": 75,
+      "recovery_actions": 22,
+      "action_counts": {
+        "move_forward": 110,
+        "turn_left": 379,
+        "turn_right": 11
+      },
+      "max_consecutive_turns": 30
+    },
+    {
+      "episode_id": "20",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00881-u1bkiGRVyu9/u1bkiGRVyu9.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 6.224595069885254,
+      "steps": 500,
+      "collisions": 237,
+      "recovery_actions": 77,
+      "action_counts": {
+        "turn_left": 194,
+        "move_forward": 265,
+        "turn_right": 41
+      },
+      "max_consecutive_turns": 20
+    },
+    {
+      "episode_id": "4",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00824-Dd4bFSTQ8gi/Dd4bFSTQ8gi.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 5.50050163269043,
+      "steps": 500,
+      "collisions": 329,
+      "recovery_actions": 108,
+      "action_counts": {
+        "turn_left": 95,
+        "move_forward": 351,
+        "turn_right": 54
+      },
+      "max_consecutive_turns": 16
+    },
+    {
+      "episode_id": "8",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00835-q3zU7Yy5E5s/q3zU7Yy5E5s.basis.glb",
+      "success": 1.0,
+      "spl": 0.4777947785040563,
+      "distance_to_goal": 0.17104585468769073,
+      "steps": 225,
+      "collisions": 104,
+      "recovery_actions": 32,
+      "action_counts": {
+        "move_forward": 130,
+        "turn_right": 16,
+        "turn_left": 79
+      },
+      "max_consecutive_turns": 13
+    },
+    {
+      "episode_id": "18",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00822-nrA1tAA17Yp/nrA1tAA17Yp.basis.glb",
+      "success": 1.0,
+      "spl": 0.6625254528261179,
+      "distance_to_goal": 0.19702133536338806,
+      "steps": 35,
+      "collisions": 3,
+      "recovery_actions": 0,
+      "action_counts": {
+        "turn_left": 23,
+        "move_forward": 12
+      },
+      "max_consecutive_turns": 11
+    },
+    {
+      "episode_id": "23",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00838-kJJyRFXVpx2/kJJyRFXVpx2.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 10.165595054626465,
+      "steps": 500,
+      "collisions": 147,
+      "recovery_actions": 46,
+      "action_counts": {
+        "turn_left": 259,
+        "move_forward": 218,
+        "turn_right": 23
+      },
+      "max_consecutive_turns": 25
+    },
+    {
+      "episode_id": "2",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00889-HMkoS756sz6/HMkoS756sz6.basis.glb",
+      "success": 1.0,
+      "spl": 0.5208889171900979,
+      "distance_to_goal": 0.06184786558151245,
+      "steps": 128,
+      "collisions": 9,
+      "recovery_actions": 2,
+      "action_counts": {
+        "turn_left": 86,
+        "move_forward": 41,
+        "turn_right": 1
+      },
+      "max_consecutive_turns": 14
+    },
+    {
+      "episode_id": "0",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00869-MHPLjHsuG27/MHPLjHsuG27.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 6.596617221832275,
+      "steps": 500,
+      "collisions": 285,
+      "recovery_actions": 94,
+      "action_counts": {
+        "turn_left": 158,
+        "move_forward": 295,
+        "turn_right": 47
+      },
+      "max_consecutive_turns": 23
+    },
+    {
+      "episode_id": "15",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00804-BHXhpBwSMLh/BHXhpBwSMLh.basis.glb",
+      "success": 1.0,
+      "spl": 0.5433982726431135,
+      "distance_to_goal": 0.056512363255023956,
+      "steps": 307,
+      "collisions": 84,
+      "recovery_actions": 25,
+      "action_counts": {
+        "turn_left": 170,
+        "move_forward": 124,
+        "turn_right": 13
+      },
+      "max_consecutive_turns": 22
+    },
+    {
+      "episode_id": "12",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00830-5jp3fCRSRjc/5jp3fCRSRjc.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 6.553403854370117,
+      "steps": 500,
+      "collisions": 292,
+      "recovery_actions": 96,
+      "action_counts": {
+        "move_forward": 339,
+        "turn_left": 113,
+        "turn_right": 48
+      },
+      "max_consecutive_turns": 17
+    },
+    {
+      "episode_id": "24",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00881-u1bkiGRVyu9/u1bkiGRVyu9.basis.glb",
+      "success": 1.0,
+      "spl": 0.698607998047957,
+      "distance_to_goal": 0.10865172743797302,
+      "steps": 120,
+      "collisions": 32,
+      "recovery_actions": 10,
+      "action_counts": {
+        "turn_left": 62,
+        "move_forward": 53,
+        "turn_right": 5
+      },
+      "max_consecutive_turns": 18
+    },
+    {
+      "episode_id": "17",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00835-q3zU7Yy5E5s/q3zU7Yy5E5s.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 1.9249751567840576,
+      "steps": 500,
+      "collisions": 369,
+      "recovery_actions": 122,
+      "action_counts": {
+        "turn_left": 68,
+        "move_forward": 369,
+        "turn_right": 63
+      },
+      "max_consecutive_turns": 2
+    },
+    {
+      "episode_id": "8",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00894-HY1NcmCgn3n/HY1NcmCgn3n.basis.glb",
+      "success": 1.0,
+      "spl": 0.586687977863165,
+      "distance_to_goal": 0.10518696159124374,
+      "steps": 388,
+      "collisions": 59,
+      "recovery_actions": 18,
+      "action_counts": {
+        "turn_left": 267,
+        "move_forward": 112,
+        "turn_right": 9
+      },
+      "max_consecutive_turns": 36
+    },
+    {
+      "episode_id": "14",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00824-Dd4bFSTQ8gi/Dd4bFSTQ8gi.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 9.836148262023926,
+      "steps": 500,
+      "collisions": 287,
+      "recovery_actions": 94,
+      "action_counts": {
+        "move_forward": 320,
+        "turn_right": 48,
+        "turn_left": 132
+      },
+      "max_consecutive_turns": 14
+    },
+    {
+      "episode_id": "1",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00852-T6nG3E2Uui9/T6nG3E2Uui9.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 12.121583938598633,
+      "steps": 500,
+      "collisions": 172,
+      "recovery_actions": 56,
+      "action_counts": {
+        "turn_left": 297,
+        "move_forward": 175,
+        "turn_right": 28
+      },
+      "max_consecutive_turns": 30
+    },
+    {
+      "episode_id": "18",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00850-W7k2QWzBrFY/W7k2QWzBrFY.basis.glb",
+      "success": 1.0,
+      "spl": 0.9713914089813844,
+      "distance_to_goal": 0.18410028517246246,
+      "steps": 42,
+      "collisions": 5,
+      "recovery_actions": 1,
+      "action_counts": {
+        "turn_left": 25,
+        "move_forward": 16,
+        "turn_right": 1
+      },
+      "max_consecutive_turns": 12
+    },
+    {
+      "episode_id": "1",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00840-z9YwN9M8FpG/z9YwN9M8FpG.basis.glb",
+      "success": 1.0,
+      "spl": 0.5460497626875856,
+      "distance_to_goal": 0.11332766711711884,
+      "steps": 187,
+      "collisions": 14,
+      "recovery_actions": 4,
+      "action_counts": {
+        "move_forward": 75,
+        "turn_left": 110,
+        "turn_right": 2
+      },
+      "max_consecutive_turns": 22
+    },
+    {
+      "episode_id": "0",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00840-z9YwN9M8FpG/z9YwN9M8FpG.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 11.275470733642578,
+      "steps": 500,
+      "collisions": 191,
+      "recovery_actions": 63,
+      "action_counts": {
+        "turn_left": 251,
+        "move_forward": 217,
+        "turn_right": 32
+      },
+      "max_consecutive_turns": 26
+    },
+    {
+      "episode_id": "5",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00854-SiKqEZx7Ejt/SiKqEZx7Ejt.basis.glb",
+      "success": 1.0,
+      "spl": 0.4072706629852129,
+      "distance_to_goal": 0.10478115826845169,
+      "steps": 194,
+      "collisions": 23,
+      "recovery_actions": 5,
+      "action_counts": {
+        "move_forward": 94,
+        "turn_left": 97,
+        "turn_right": 3
+      },
+      "max_consecutive_turns": 16
+    },
+    {
+      "episode_id": "18",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00809-Qpor2mEya8F/Qpor2mEya8F.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 16.974878311157227,
+      "steps": 500,
+      "collisions": 252,
+      "recovery_actions": 82,
+      "action_counts": {
+        "move_forward": 282,
+        "turn_right": 41,
+        "turn_left": 177
+      },
+      "max_consecutive_turns": 24
+    },
+    {
+      "episode_id": "8",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00817-X4qjx5vquwH/X4qjx5vquwH.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 4.596016883850098,
+      "steps": 500,
+      "collisions": 184,
+      "recovery_actions": 58,
+      "action_counts": {
+        "turn_left": 222,
+        "move_forward": 247,
+        "turn_right": 31
+      },
+      "max_consecutive_turns": 23
+    },
+    {
+      "episode_id": "14",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00869-MHPLjHsuG27/MHPLjHsuG27.basis.glb",
+      "success": 1.0,
+      "spl": 0.5614035331227202,
+      "distance_to_goal": 0.0787874385714531,
+      "steps": 157,
+      "collisions": 36,
+      "recovery_actions": 10,
+      "action_counts": {
+        "move_forward": 58,
+        "turn_left": 93,
+        "turn_right": 6
+      },
+      "max_consecutive_turns": 17
+    },
+    {
+      "episode_id": "17",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00889-HMkoS756sz6/HMkoS756sz6.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 9.01502799987793,
+      "steps": 500,
+      "collisions": 270,
+      "recovery_actions": 89,
+      "action_counts": {
+        "move_forward": 273,
+        "turn_left": 182,
+        "turn_right": 45
+      },
+      "max_consecutive_turns": 22
+    },
+    {
+      "episode_id": "16",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00880-Nfvxx8J5NCo/Nfvxx8J5NCo.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 10.879443168640137,
+      "steps": 500,
+      "collisions": 311,
+      "recovery_actions": 102,
+      "action_counts": {
+        "turn_left": 126,
+        "move_forward": 322,
+        "turn_right": 52
+      },
+      "max_consecutive_turns": 19
+    },
+    {
+      "episode_id": "1",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00808-y9hTuugGdiq/y9hTuugGdiq.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 17.41228485107422,
+      "steps": 500,
+      "collisions": 6,
+      "recovery_actions": 0,
+      "action_counts": {
+        "turn_left": 488,
+        "move_forward": 12
+      },
+      "max_consecutive_turns": 110
+    },
+    {
+      "episode_id": "0",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00842-hkr2MGpHD6B/hkr2MGpHD6B.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 13.949024200439453,
+      "steps": 500,
+      "collisions": 22,
+      "recovery_actions": 6,
+      "action_counts": {
+        "turn_left": 424,
+        "move_forward": 73,
+        "turn_right": 3
+      },
+      "max_consecutive_turns": 43
+    },
+    {
+      "episode_id": "10",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00817-X4qjx5vquwH/X4qjx5vquwH.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 11.512218475341797,
+      "steps": 500,
+      "collisions": 130,
+      "recovery_actions": 43,
+      "action_counts": {
+        "turn_left": 345,
+        "move_forward": 133,
+        "turn_right": 22
+      },
+      "max_consecutive_turns": 25
+    },
+    {
+      "episode_id": "13",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00824-Dd4bFSTQ8gi/Dd4bFSTQ8gi.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 9.5238618850708,
+      "steps": 500,
+      "collisions": 209,
+      "recovery_actions": 67,
+      "action_counts": {
+        "move_forward": 254,
+        "turn_left": 212,
+        "turn_right": 34
+      },
+      "max_consecutive_turns": 22
+    },
+    {
+      "episode_id": "11",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00867-uLz9jNga3kC/uLz9jNga3kC.basis.glb",
+      "success": 1.0,
+      "spl": 0.5755387393841105,
+      "distance_to_goal": 0.10808224231004715,
+      "steps": 112,
+      "collisions": 32,
+      "recovery_actions": 9,
+      "action_counts": {
+        "turn_left": 47,
+        "move_forward": 60,
+        "turn_right": 5
+      },
+      "max_consecutive_turns": 15
+    },
+    {
+      "episode_id": "7",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00822-nrA1tAA17Yp/nrA1tAA17Yp.basis.glb",
+      "success": 1.0,
+      "spl": 0.6342282843845027,
+      "distance_to_goal": 0.07255513221025467,
+      "steps": 237,
+      "collisions": 127,
+      "recovery_actions": 41,
+      "action_counts": {
+        "move_forward": 144,
+        "turn_left": 72,
+        "turn_right": 21
+      },
+      "max_consecutive_turns": 19
+    },
+    {
+      "episode_id": "20",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00811-7UrtFsADwob/7UrtFsADwob.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 8.463855743408203,
+      "steps": 500,
+      "collisions": 183,
+      "recovery_actions": 60,
+      "action_counts": {
+        "move_forward": 199,
+        "turn_left": 271,
+        "turn_right": 30
+      },
+      "max_consecutive_turns": 23
+    },
+    {
+      "episode_id": "0",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00827-BAbdmeyTvMZ/BAbdmeyTvMZ.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 16.824020385742188,
+      "steps": 500,
+      "collisions": 69,
+      "recovery_actions": 19,
+      "action_counts": {
+        "turn_left": 391,
+        "move_forward": 99,
+        "turn_right": 10
+      },
+      "max_consecutive_turns": 27
+    },
+    {
+      "episode_id": "13",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00846-LNg5mXe1BDj/LNg5mXe1BDj.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 11.11768913269043,
+      "steps": 500,
+      "collisions": 188,
+      "recovery_actions": 62,
+      "action_counts": {
+        "turn_left": 259,
+        "move_forward": 210,
+        "turn_right": 31
+      },
+      "max_consecutive_turns": 22
+    },
+    {
+      "episode_id": "5",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00862-LT9Jq6dN3Ea/LT9Jq6dN3Ea.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 13.001646995544434,
+      "steps": 500,
+      "collisions": 155,
+      "recovery_actions": 50,
+      "action_counts": {
+        "turn_left": 308,
+        "move_forward": 167,
+        "turn_right": 25
+      },
+      "max_consecutive_turns": 28
+    },
+    {
+      "episode_id": "14",
+      "scene_id": "/home/yiqing/Robotics/Nav_robot/nomadpg_pointnav_migration_20260928/runtime/habitat-data/scene_datasets/hm3d/val/00870-AYpsNQsWncn/AYpsNQsWncn.basis.glb",
+      "success": 0.0,
+      "spl": 0.0,
+      "distance_to_goal": 7.51192569732666,
+      "steps": 500,
+      "collisions": 331,
+      "recovery_actions": 109,
+      "action_counts": {
+        "move_forward": 340,
+        "turn_left": 105,
+        "turn_right": 55
+      },
+      "max_consecutive_turns": 16
+    }
+  ]
+}
